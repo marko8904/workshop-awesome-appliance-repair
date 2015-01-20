@@ -1,0 +1,7 @@
+name             'AwesomeApplianceRepair'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures AwesomeApplianceRepair'
+long_description 'Installs/Configures AwesomeApplianceRepair'
+version          '0.1.0'
