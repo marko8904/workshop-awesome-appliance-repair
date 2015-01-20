@@ -8,7 +8,7 @@
 #
 
 package 'apache2'
-package 'mysql5'
+package 'mysql-server'
 package 'unzip'
 package 'python'
 package 'wget'
