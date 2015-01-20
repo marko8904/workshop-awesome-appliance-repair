@@ -16,7 +16,7 @@ end
 with_machine_options({
   :bootstrap_options => {
     :instance_type => "t1.micro",
-    :key_name => "aws-popup-chef",
+    :key_name => "aws-popup-loft",
     :security_groups => [ "#{name}-ssh","#{name}-http"]
   },
   :ssh_username => "root",
