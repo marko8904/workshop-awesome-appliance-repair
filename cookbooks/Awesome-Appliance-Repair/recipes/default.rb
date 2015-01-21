@@ -24,11 +24,13 @@ package 'wget'
 #execute "wget https://github.com/colincam/Awesome-Appliance-Repair/archive/master.zip"
 
 #using remote_file is probably more stable
-remote_file "/tmp/master.zip" do
-   source "https://github.com/colincam/Awesome-Appliance-Repair/archive/master.zip"
-   action :create
-end
+# remote_file "/tmp/master.zip" do
+#    source "https://github.com/colincam/Awesome-Appliance-Repair/archive/master.zip"
+#    action :create
+# end
 
-# git "aar" do
-#    end
+git "aar" do
+   repository "https://github.com/colincam/Awesome-Appliance-Repair.git"
+   revision master
+end
    
