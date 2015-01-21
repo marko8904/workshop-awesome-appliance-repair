@@ -29,13 +29,18 @@ package 'wget'
 #    action :create
 # end
 
-git "/tmp/aar" do
+git "/tmp/Awesome-Appliance-Repair" do
    repository "https://github.com/colincam/Awesome-Appliance-Repair.git"
    revision master
 end
 
 execute "cp -RPpf AAR /var/www/" do
-   cwd "/tmp/aar/Awesome-Appliance-Repair"
+   cwd "/tmp/Awesome-Appliance-Repair"
+   user "root"
+end
+
+execute "python AARinstall.py" do
+   cwd "/tmp/Awesome-Appliance-Repair"
    user "root"
 end
    
