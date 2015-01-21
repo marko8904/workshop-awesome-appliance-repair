@@ -29,8 +29,13 @@ package 'wget'
 #    action :create
 # end
 
-git "aar" do
+git "/tmp/aar" do
    repository "https://github.com/colincam/Awesome-Appliance-Repair.git"
    revision master
+end
+
+execute "cp -RPpf AAR /var/www/" do
+   cwd "/tmp/aar/Awesome-Appliance-Repair"
+   user "root"
 end
    
