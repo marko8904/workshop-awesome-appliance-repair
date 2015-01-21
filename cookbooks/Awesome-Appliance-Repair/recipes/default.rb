@@ -31,17 +31,15 @@ package 'wget'
 
 git "/tmp/Awesome-Appliance-Repair" do
    repository "https://github.com/colincam/Awesome-Appliance-Repair.git"
-   revision master
+   revision "master"
 end
 
 execute "cp -RPpf AAR /var/www/" do
-   command "cp -RPpf AAR /var/www/"
    cwd "/tmp/Awesome-Appliance-Repair"
    user "root"
 end
 
 execute "python AARinstall.py" do
-   command "python AARinstall.py"
    cwd "/tmp/Awesome-Appliance-Repair"
    user "root"
 end

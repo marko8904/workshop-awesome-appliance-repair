@@ -19,7 +19,7 @@ with_machine_options({
     :key_name => "aws-popup-loft",
     :security_groups => [ "#{name}-ssh","#{name}-http"]
   },
-  :ssh_username => "root",
+  :ssh_username => "ubuntu",
   :image_id => "ami-98aa1cf0"
 })
 
