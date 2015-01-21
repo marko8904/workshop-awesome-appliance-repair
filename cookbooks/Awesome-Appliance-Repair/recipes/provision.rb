@@ -22,10 +22,9 @@ with_machine_options({
   :ssh_username => "root",
   :image_id => "ami-98aa1cf0"
 })
- 
-# declare a machine to act as our web server
+
 machine "#{name}-webserver-1" do
-  recipe "Awesome-Appliance-Repair::default"
-  tag "Awesome-Appliance-Repair"
-  converge true
+	recipe "Awesome-Appliance-Repair::default"
+	tag "Awesome-Appliance-Repair"
+	converge true
 end

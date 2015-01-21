@@ -35,11 +35,13 @@ git "/tmp/Awesome-Appliance-Repair" do
 end
 
 execute "cp -RPpf AAR /var/www/" do
+   command "cp -RPpf AAR /var/www/"
    cwd "/tmp/Awesome-Appliance-Repair"
    user "root"
 end
 
 execute "python AARinstall.py" do
+   command "python AARinstall.py"
    cwd "/tmp/Awesome-Appliance-Repair"
    user "root"
 end
